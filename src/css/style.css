@@ -107,7 +107,7 @@ header {
   border-radius: 8px;
 }
 
-.about div h2 {
+.about-section div h2 {
   font-size: 32px;
   margin-bottom: 32px;
 }
@@ -185,4 +185,62 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1050px) {
+  /* MAIN SECTION */
+  .main-section {
+    background-size: cover;
+
+    h1 {
+      font-size: 46px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  /* ABOUT SECTION */
+
+  .about-section {
+    flex-direction: column;
+
+    div h2 {
+      font-size: 42px;
+    }
+
+    div {
+      max-width: 85%;
+    }
+
+    img {
+      width: 80%;
+    }
+  }
+
+  /* PROJECTS SECTION */
+
+  .projects-section {
+    padding: 0;
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 42px;
+    }
+
+    img {
+      width: 28%;
+      opacity: 1;
+    }
+  }
+
+  /* FOOTER SECTION */
+
+  footer {
+    flex-direction: column;
+    padding: 40px 0;
+  }
 }
