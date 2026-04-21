@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+
+header {
+  background-color: #181818;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 28px;
+  gap: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.nav-list a:hover {
+  color: #fff;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+  width: 100%;
+  background-color: black;
+  height: calc(100vh - 80px);
+  background-image: url("../images/programador.png");
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.main-section h1 {
+  color: #fff;
+  font-size: 54px;
+}
+
+.main-section p {
+  font-size: 24px;
+  font-style: italic;
+  color: #1e96fc;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.call-to-action {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.9s;
+}
+
+.call-to-action:hover {
+  transform: scale(1.1);
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-section div {
+  max-width: 50%;
+}
+
+.about-section img {
+  max-width: 480px;
+  border-radius: 8px;
+}
+
+.about div h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+/* PROJECTS SECTION */
+
+.projects-section {
+  width: 100%;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-section h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.projects-section p {
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.project-list {
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-section img {
+  width: 22%;
+  margin: 0px 0.5%;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.projects-section img:hover {
+  opacity: 1;
+}
+
+.action {
+  background-color: #181818;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 14px;
+  transition: background 0.3s;
+}
+
+.action:hover {
+  background-color: #292929;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: #181818;
+  color: white;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
